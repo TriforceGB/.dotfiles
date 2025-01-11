@@ -62,6 +62,8 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 #Aliases
 alias ls='ls --color -F'
+alias ip='ip -color=auto'
+alias setup='bash -c "$(curl -fsSL https://raw.githubusercontent.com/TriforceGB/Anisble_Setup/main/Scripts/Pre-Ansible.sh)"'
 
 #eval imports
 eval "$(fzf --zsh)"
