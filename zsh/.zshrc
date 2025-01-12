@@ -67,6 +67,7 @@ alias setup='bash -c "$(curl -fsSL https://raw.githubusercontent.com/TriforceGB/
 alias fastfetch=fastfetch
 alias neofetch=fastfetch
 alias fetch=fastfetch
+alias vim=nvim
 
 #eval imports
 eval "$(fzf --zsh)"
