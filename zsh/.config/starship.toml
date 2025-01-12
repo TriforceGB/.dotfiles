@@ -8,11 +8,13 @@ $git_metrics\
 $all\
 $fill\
 $sudo \
+$time \
 $battery
 $os \
-$username \
+$hostname\
 $container\
 $character
+
 """
 # $docker_context
 # $hostname\
@@ -26,7 +28,6 @@ scan_timeout = 30
 command_timeout = 500
 add_newline = true
 follow_symlinks = true
-
 
 
 [battery]
@@ -44,10 +45,13 @@ style = 'bold Red'
 threshold = 65
 style = 'bold Yellow'
 [[battery.display]]
-threshold = 100 #Changed on Desktop?
+threshold = 100           #Changed on Desktop?
 style = 'bold Green'
 discharging_symbol = '󰁹 '
 
+[time]
+format = '[$time]($style) '
+disabled = false
 
 [character]
 success_symbol = '[>](bold green) '
@@ -60,7 +64,7 @@ vimcmd_visual_symbol = '[<](bold yellow)'
 
 [container]
 style = 'blue dimmed'
-disabled = true #Here for WSL
+disabled = true       #Here for WSL
 symbol = " "
 
 [directory]
@@ -94,6 +98,7 @@ format = '([$ahead_behind]($style))'
 disabled = false
 
 [hostname]
+format = '[$ssh_symbol]($style) '
 ssh_only = true
 ssh_symbol = " "
 
