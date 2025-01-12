@@ -120,6 +120,7 @@ disabled = false
 [username]
 format = '[$user]($style)'
 show_always = false
+disabled = true
 
 
 # Extra Symbols  
