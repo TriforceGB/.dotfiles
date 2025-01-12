@@ -101,6 +101,7 @@ disabled = false
 format = '[$ssh_symbol]($style) '
 ssh_only = true
 ssh_symbol = " "
+style = 'bold dimmid blue'
 
 [localip]
 ssh_only = false
