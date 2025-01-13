@@ -60,6 +60,10 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
+#eval imports
+eval "$(fzf --zsh)"
+eval "$(zoxide init --cmd cd zsh)"  
+
 #Aliases
 alias ls='ls --color -F'
 alias ip='ip -color=auto'
@@ -69,6 +73,5 @@ alias neofetch=fastfetch
 alias fetch=fastfetch
 alias vim=nvim
 
-#eval imports
-eval "$(fzf --zsh)"
-eval "$(zoxide init --cmd cd zsh)"  
+# Boot Commands
+neofetch #Probably will make small and custom for boot
