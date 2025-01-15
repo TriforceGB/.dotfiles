@@ -37,11 +37,13 @@ autoload -U compinit && compinit
 zinit cdreplay -q
 
 # Keybindings
-bindkey '\e[Z' autosuggest-accept #Shift Tab
+bindkey '^I' autosuggest-accept # Shift
+bindkey '\e[Z' fzf-completion #Shift Tab
 bindkey '^[[A' history-search-backward #Up Arrow
 bindkey '^[[B' history-search-forward #Down Arrow
  
 # Adding History
+ZSH_AUTOSUGGEST_STRATEGY=(completion history)
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
 SAVEHIST=$HISTSIZE
@@ -57,12 +59,9 @@ setopt hist_find_no_dups
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "{(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
+zstyle ':completion:*' fzf-search-display true
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
-
-#eval imports
-eval "$(fzf --zsh)"
-eval "$(zoxide init --cmd cd zsh)"  
 
 #Aliases
 alias ls='ls --color -F'
@@ -73,5 +72,6 @@ alias neofetch=fastfetch
 alias fetch=fastfetch
 alias vim=nvim
 
-# Boot Commands
-neofetch #Probably will make small and custom for boot
+#eval imports
+eval "$(fzf --zsh)"
+eval "$(zoxide init --cmd cd zsh)"  
