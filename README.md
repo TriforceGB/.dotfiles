@@ -1,5 +1,5 @@
 # Personal dotfiles
-This is all the dotfiles I used while working with linux. there just for personal use but if you want to use them thats ok I guess
+This is all the dotfiles I used while working with linux. there just for personal use with many of them using other people dot files as a base. Link to the orignals are found in each folder in the readme
 
 ## Requirements
 all these files are manage by stow which need to be downloaded using this command or Equivalent
