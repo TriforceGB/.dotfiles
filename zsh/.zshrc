@@ -10,7 +10,8 @@ fi
 
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
-
+# Source Colors from Dots
+source ~/.config/zshrc.d/dots-hyprland.zsh
 # Adding Starship
 zinit ice as"command" from"gh-r" \
           atclone"./starship init zsh > init.zsh; ./starship completions zsh > _starship" \
