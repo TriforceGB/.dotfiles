@@ -41,7 +41,7 @@ empty_symbol = '󰂎 '
 threshold = 30
 style = 'bold Red'
 [[battery.display]]
-threshold = 65
+threshold = 50
 style = 'bold Yellow'
 [[battery.display]]
 threshold = 100           #Changed on Desktop?
