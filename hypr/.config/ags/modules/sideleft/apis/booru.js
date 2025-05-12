@@ -237,7 +237,7 @@ const BooruPage = (taglist, serviceName = 'Booru') => {
                             const currentTags = BooruService.queries.at(-1).realTagList.filter(tag => !tag.includes('rating:'));
                             const tagDirectory = currentTags.join('+');
                             const fileName = decodeURIComponent((data.file_url).substring((data.file_url).lastIndexOf('/') + 1));
-                            const saveCommand = `mkdir -p "$(xdg-user-dir PICTURES)/Illustartions/${data.is_nsfw ? '.Lewds/' : ''}" && curl -L -o "$(xdg-user-dir PICTURES)/Illustartions/${data.is_nsfw ? '.Lewds/' : ''}${fileName}" '${data.file_url}'`;
+                            const saveCommand = `mkdir -p "$(xdg-user-dir PICTURES)/Illustration/${data.is_nsfw ? '.Lewds/' : ''}" && curl -L -o "$(xdg-user-dir PICTURES)/Illustration/${data.is_nsfw ? '.Lewds/' : ''}${fileName}" '${data.file_url}'`;
                             print(saveCommand)
                             execAsync(['bash', '-c', saveCommand])
                                 .then(() => self.label = 'done')
@@ -252,8 +252,8 @@ const BooruPage = (taglist, serviceName = 'Booru') => {
                             let fileExtension = data.file_ext || 'jpg';
                             print(data)
                             const fileName = decodeURIComponent((data.file_url).substring((data.file_url).lastIndexOf('/') + 1));
-                            const saveCommand = `mkdir -p "$(xdg-user-dir PICTURES)/Wallpapers" && curl -L -o "$(xdg-user-dir PICTURES)/Wallpapers/${fileName}" '${data.file_url}'`;
-                            const setWallpaperCommand = `${App.configDir}/scripts/color_generation/switchwall.sh "$(xdg-user-dir PICTURES)/Wallpapers/${fileName}"`;
+                            const saveCommand = `mkdir -p "$(xdg-user-dir PICTURES)/Illustration" && curl -L -o "$(xdg-user-dir PICTURES)/Illustration/${fileName}" '${data.file_url}'`;
+                            const setWallpaperCommand = `${App.configDir}/scripts/color_generation/switchwall.sh "$(xdg-user-dir PICTURES)/Illustration/${fileName}"`;
                             // const 
                             execAsync(['bash', '-c', `${saveCommand} && ${setWallpaperCommand}`])
                                 .then(() => self.label = 'done')

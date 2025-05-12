@@ -15,15 +15,5 @@
 // "workspaces": {"shown": 8 }
 //
 {
-    "sidebar": {
-        "pages": {
-            "apis": {
-                "defaultPage": "booru"
-            },
-            "defaultPage": "apis"
-        },
-        "image": {
-            "allowNsfw": true
-        }
-    }
+    
 }

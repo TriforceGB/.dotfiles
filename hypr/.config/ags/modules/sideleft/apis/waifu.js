@@ -163,7 +163,7 @@ const WaifuImage = (taglist) => {
                             name: getString('Hoard'),
                             icon: 'save',
                             action: (self) => {
-                                execAsync(['bash', '-c', `mkdir -p $(xdg-user-dir PICTURES)/homework${thisBlock.attribute.isNsfw ? '/🌶️' : ''} && cp ${thisBlock.attribute.imagePath} $(xdg-user-dir PICTURES)/homework${thisBlock.attribute.isNsfw ? '/🌶️/' : ''}`])
+                                execAsync(['bash', '-c', `mkdir -p $(xdg-user-dir PICTURES)/Illustration${thisBlock.attribute.isNsfw ? '/.Lewds' : ''} && cp ${thisBlock.attribute.imagePath} $(xdg-user-dir PICTURES)/Illustration${thisBlock.attribute.isNsfw ? '/.Lewds/' : ''}`])
                                     .then(() => self.label = 'done')
                                     .catch(print);
                             },
