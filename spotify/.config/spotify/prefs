@@ -1,0 +1,7 @@
+app.window.state.saved=true
+app.rollback-to-sc=true
+es.send-on-startup=true
+core.clock_delta=1
+app.window.position.saved=true
+app.autostart-mode="off"
+es.use-lmdb=true
