@@ -108,7 +108,7 @@
             "wpsoffice": "wps-office2019-kprometheus",
             "footclient": "foot",
             "zen": "zen-browser",
-            "zed": "dev.zed.Zed",
+            "dev.zed.Zed": "zed",
             "qalculate-gtk": "qalculate",
             "": "image-missing"
         },
