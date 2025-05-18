@@ -1,0 +1,2 @@
+# Discord
+Here is stored all my Vencord Themes that I used. All extensions are just stored via the cloud save they have. I have 2 main types of themes based on [ClearVision](https://betterdiscord.app/theme/ClearVision) Originally but I've been mainly now been using [BasicBackground](https://betterdiscord.app/theme/BasicBackground) by DevilBro. Most the images were gather a long time ago and unfortunately unable to remember the sources for most. 
