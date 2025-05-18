@@ -85,7 +85,7 @@
             "mathResults": true,
             "directorySearch": true,
             "aiSearch": false,
-            "webSearch": false
+            "webSearch": true
         },
         "engineBaseUrl": "https://duckduckgo.com/?q=",
         "excludedSites": []
