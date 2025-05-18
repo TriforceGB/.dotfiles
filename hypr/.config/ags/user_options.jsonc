@@ -15,12 +15,139 @@
 // "workspaces": {"shown": 8 }
 //
 {
+    "ai": {
+        "defaultGPTProvider": "ollama_llama_3_2",
+        "defaultTemperature": 0.5,
+        "enhancements": true,
+        "keep_alive": -1,
+        "writingCursor": " ..."
+    },
+    "appearance": {
+        "keyboardUseFlag": true
+    },
+    "apps": {
+        "imageViewer": "loupe",
+        "taskManager": "missioncenter",
+        "terminal": "kitty"
+    },
+    "battery": {
+        "low": 30,
+        "critical": 15,
+        "warnLevels": [
+            30,
+            15,
+            5
+        ],
+        "warnTitles": [
+            "Low battery",
+            "Very low battery",
+            "Critical Battery"
+        ],
+        "warnMessages": [
+            "Charge Soon",
+            "Get the Charger",
+            "SAVE AND CHARGE"
+        ],
+        "suspendThreshold": 3
+    },
     "sidebar": {
         "pages": {
+            "order": [
+                "apis",
+                "tools"
+            ],
             "defaultPage": "apis",
             "apis": {
+                "order": [
+                    "gemini",
+                    "gpt",
+                    "waifu",
+                    "booru"
+                ],
                 "defaultPage": "gemini"
             }
+        },
+        "quickToggles": {
+            "order": [
+                "wifi",
+                "bluetooth",
+                "nightlight",
+                "gamemode",
+                "idleinhibitor",
+                "cloudflarewarp"
+            ]
+        }
+    },
+    "search": {
+        "enableFeatures": {
+            "actions": true,
+            "commands": true,
+            "mathResults": true,
+            "directorySearch": true,
+            "aiSearch": false,
+            "webSearch": false
+        },
+        "engineBaseUrl": "https://duckduckgo.com/?q=",
+        "excludedSites": []
+    },
+    "workspaces": {
+        "shown": 10
+    },
+    "icons": {
+        "searchPaths": [
+            ""
+        ],
+        "substitutions": {
+            "code-url-handler": "visual-studio-code",
+            "Code": "visual-studio-code",
+            "GitHub Desktop": "github-desktop",
+            "Minecraft* 1.20.1": "minecraft",
+            "gnome-tweaks": "org.gnome.tweaks",
+            "pavucontrol-qt": "pavucontrol",
+            "wps": "wps-office2019-kprometheus",
+            "wpsoffice": "wps-office2019-kprometheus",
+            "footclient": "foot",
+            "zen": "zen-browser",
+            "zed": "dev.zed.Zed",
+            "qalculate-gtk": "qalculate",
+            "": "image-missing"
+        },
+        "regexSubstitutions": [
+            {
+                "regex": "/^steam_app_(\\d+)$/",
+                "replace": "steam_icon_$1"
+            }
+        ]
+    },
+    "keybinds": {
+        "overview": {
+            "altMoveLeft": "Ctrl+B",
+            "altMoveRight": "Ctrl+F",
+            "deleteToEnd": "Ctrl+K"
+        },
+        "sidebar": {
+            "apis": {
+                "nextTab": "Page_Down",
+                "prevTab": "Page_Up"
+            },
+            "options": {
+                "nextTab": "Page_Down",
+                "prevTab": "Page_Up"
+            },
+            "expand": "Ctrl+E",
+            "pin": "Ctrl+P",
+            "cycleTab": "Ctrl+Tab",
+            "nextTab": "Ctrl+Page_Down",
+            "prevTab": "Ctrl+Page_Up"
+        },
+        "cheatsheet": {
+            "keybinds": {
+                "nextTab": "Page_Down",
+                "prevTab": "Page_Up"
+            },
+            "nextTab": "Ctrl+Page_Down",
+            "prevTab": "Ctrl+Page_Up",
+            "cycleTab": "Ctrl+Tab"
         }
     }
 }
