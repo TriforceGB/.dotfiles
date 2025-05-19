@@ -70,7 +70,7 @@ eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
 #Aliases
-alias ls='ls --color -F'
+alias ls='eza --color --icons -F'
 alias ip='ip -color=auto'
 alias setup='bash -c "$(curl -fsSL https://raw.githubusercontent.com/TriforceGB/Anisble_Setup/main/Scripts/Pre-Ansible.sh)"'
 alias fastfetch=fastfetch
