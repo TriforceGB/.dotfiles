@@ -77,6 +77,10 @@ alias fastfetch=fastfetch
 alias neofetch=fastfetch
 alias fetch=fastfetch
 alias vim=nvim
+# uv aliases
+alias pip='uv pip'
+alias pip_export='uv pip freeze > requrements.txt'
+alias venv='uv venv'
 
 # Boot Commands
-neofetch #Probably will make small and custom for boot
+fastfetch #Probably will make small and custom for boot

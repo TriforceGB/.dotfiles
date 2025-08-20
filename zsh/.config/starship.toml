@@ -9,12 +9,13 @@ $fill\
 $sudo \
 $time \
 $battery
-$os \
 $hostname\
 $container\
 $character
 
 """
+
+# $os \
 # $docker_context
 # $hostname\
 # $localip
