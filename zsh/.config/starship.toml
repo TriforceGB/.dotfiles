@@ -9,7 +9,7 @@ $fill\
 $sudo \
 $time \
 $battery
-$os \
+$os\
 $hostname\
 $container\
 $character
