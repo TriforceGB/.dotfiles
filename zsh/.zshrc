@@ -69,11 +69,13 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
+#exports
+export EDITOR=nvim
+
 #Aliases
 alias ls='eza --color --icons -F'
 alias ip='ip -color=auto'
 alias setup='bash -c "$(curl -fsSL https://raw.githubusercontent.com/TriforceGB/Anisble_Setup/main/Scripts/Pre-Ansible.sh)"'
-alias fastfetch=fastfetch
 alias neofetch=fastfetch
 alias fetch=fastfetch
 alias vim=nvim

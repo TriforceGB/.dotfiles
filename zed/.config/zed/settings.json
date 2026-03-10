@@ -1,0 +1,13 @@
+{
+  "relative_line_numbers": true,
+  "icon_theme": "Catppuccin Mocha",
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "vim_mode": true,
+  "theme": {
+    "mode": "system",
+    "light": "Ayu Light",
+    "dark": "Catppuccin Mocha",
+  },
+}
