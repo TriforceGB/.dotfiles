@@ -63,6 +63,9 @@ require('lazy').setup({
     -- require 'plugins.gitsign', -- bit blame and other visual git features
     require 'plugins.gitsigns', -- adds gitsigns recommend keymaps
 
+    -- Markdown and Obsidian Plugins
+    require 'plugins.markdown-render', -- format markdown files
+
     -- Fun Plugins
     require 'plugins.vim-be-better', -- vim practice
 
