@@ -1,47 +1,19 @@
 return {
-  'nvim-treesitter/nvim-treesitter',
-  build = ':TSUpdate', -- only updates when plugin updates
-  -- dependencies = { 'HiPhish/rainbow-delimiters.nvim' }, -- if you install parsers with `nvim-treesitter`
-  config = function()
-    require('nvim-treesitter').setup {
-      ensure_installed = {
-        'bash',
-        'c',
-        'diff',
-        'html',
-        'lua',
-        'luadoc',
-        'markdown',
-        'markdown_inline',
-        'query',
-        'vim',
-        'vimdoc',
-        'python',
-        'java',
-        'csv',
-        'css',
-        'dockerfile',
-        'git_config',
-        'git_rebase',
-        'gitattriubutes',
-        'gitcommit',
-        'gitignore',
-        'yaml',
-        'txt',
-      },
+	'nvim-treesitter/nvim-treesitter',
+	lazy = false,
+	build = ':TSUpdate',
+	config = function()
+		-- Highlighting
+		vim.api.nvim_create_autocmd('FileType', {
+			pattern = { '<filetype>' },
+			callback = function() vim.treesitter.start() end,
+		})
 
-      highlight = {
-        enable = true,
-      },
+		-- Folds
+		vim.wo[0][0].foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+		vim.wo[0][0].foldmethod = 'expr'
 
-      indent = {
-        enable = true,
-      },
-
-      rainbow = {
-        enable = true,
-        termcolors = { 161, 201, 14, 13, 123, 172 },
-      },
-    }
-  end,
+		-- Indentation
+		vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+	end,
 }

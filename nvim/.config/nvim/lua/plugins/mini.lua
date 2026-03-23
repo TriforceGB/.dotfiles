@@ -1,37 +1,55 @@
 return {
-  'nvim-mini/mini.nvim',
-  config = function()
-    -- Better Around/Inside textobjects
-    --
-    -- Examples:
-    --  - va)  - [V]isually select [A]round [)]paren
-    --  - yinq - [Y]ank [I]nside [N]ext [Q]uote
-    --  - ci'  - [C]hange [I]nside [']quote
-    require('mini.ai').setup { n_lines = 500 }
+	"nvim-mini/mini.nvim",
+	version = false, -- Main Branch
+	config = function()
+		-- Text Editing
+		require('mini.ai').setup({ n_line=500 })
+		-- require('mini.align').setup()
+		require('mini.comment').setup()
+		-- require('mini.completion').setup()
+		-- require('mini.keymap').setup()
+		require('mini.move').setup()
+		-- require('mini.operators').setup()
+		require('mini.pairs').setup()
+		-- require('mini.snippets').setup()
+		require('mini.surround').setup()
 
-    -- Add/delete/replace surroundings (brackets, quotes, etc.)
-    --
-    -- - saiw) - [S]urround [A]dd [I]nner [W]ord [)]Paren
-    -- - sd'   - [S]urround [D]elete [']quotes
-    -- - sr)'  - [S]urround [R]eplace [)] [']
-    require('mini.surround').setup()
-    require('mini.icons').setup()
-    require('mini.cmdline').setup()
-    require('mini.diff').setup()
-    -- Simple and easy statusline.
-    --  You could remove this setup call if you don't like it,
-    --  and try some other statusline plugin
-    local statusline = require 'mini.statusline'
-    -- set use_icons to true if you have a Nerd Font
-    statusline.setup { use_icons = vim.g.have_nerd_font }
+		-- General Workflow
+		-- require('mini.basics').setup()
+		-- require('mini.bracketed').setup()
+		-- require('mini.bufremove').setup()
+		require('mini.clue').setup()
+		require('mini.cmdline').setup()
+		-- require('mini.deps').setup()
+		-- require('mini.diff').setup()
+		require('mini.extra').setup()
+		require('mini.files').setup()
+		-- require('mini.git').setup()
+		require('mini.jump').setup()
+		-- require('mini.jump2d').setup()
+		require('mini.misc').setup()
+		require('mini.pick').setup()
+		require('mini.sessions').setup()
+		require('mini.visits').setup()
 
-    -- You can configure sections in the statusline by overriding their
-    -- default behavior. For example, here we set the section for
-    -- cursor location to LINE:COLUMN
-    ---@diagnostic disable-next-line: duplicate-set-field
-    statusline.section_location = function() return '%2l:%-2v' end
+		-- Apperance
+		-- require('mini.animate').setup()
+		-- require('mini.base16').setup()
+		-- require('mini.colors').setup()
+		require('mini.cursorword').setup()
+		require('mini.hipatterns').setup()
+		-- require('mini.hues').setup()
+		require('mini.icons').setup()
+		-- require('mini.indentscope').setup()
+		-- require('mini.map').setup()
+		-- require('mini.notify').setup()
+		-- require('mini.starter').setup()
+		require('mini.statusline').setup()
+		-- require('mini.trailspace').setup()
 
-    -- ... and there is more!
-    --  Check out: https://github.com/nvim-mini/mini.nvim
-  end,
+		-- Other
+		-- require('mini.doc').setup()
+		-- require('mini.fuzzy').setup()
+		-- require('mini.test').setup()
+	end,
 }
