@@ -39,4 +39,5 @@ require("opitions")
 require("keymaps")
 -- Loading Lazy.nvim and all Plugins
 require("lazy-nvim")
--- Loading LSP
+-- Loading Custom Theme
+require("matugen").setup()
