@@ -9,7 +9,7 @@ vim.o.number = true
 vim.o.relativenumber = true
 
 -- Enable mouse mode
-vim.o.mouse = 'a'
+vim.o.mouse = "a"
 
 -- Enable break indent
 vim.o.breakindent = true
@@ -18,14 +18,14 @@ vim.o.breakindent = true
 vim.o.undofile = true
 
 -- Sync clipboard between OS and Neovim.
-vim.schedule(function() vim.o.clipboard = 'unnamedplus' end)
+vim.schedule(function() vim.o.clipboard = "unnamedplus" end)
 
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
 vim.o.ignorecase = true
 vim.o.smartcase = true
 
 -- Keep signcolumn on by default
-vim.o.signcolumn = 'yes:2'
+vim.o.signcolumn = "yes:2"
 
 -- Don't show the mode, since it's already in the status line
 vim.o.showmode = false
@@ -59,7 +59,7 @@ vim.o.foldlevelstart = -1
 
 -- Sets how neovim will display certain whitespace characters in the editor.
 vim.o.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
 -- if performing an operation that would fail due to unsaved changes in the buffer (like `:q`),
 vim.o.confirm = true

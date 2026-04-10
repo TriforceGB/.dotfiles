@@ -8,10 +8,10 @@ return {
 			enable = true,
 			-- node_decremental captures both node_incremental and scope_incremental
 			keymaps = {
-				init_selection = '<Enter>',
-				node_incremental = '<Enter>',
+				init_selection = "<Enter>",
+				node_incremental = "<Enter>",
 				scope_incremental = false,
-				node_decremental = '<Backspace>',
+				node_decremental = "<Backspace>",
 			},
 		},
 	},
