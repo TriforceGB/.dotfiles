@@ -180,33 +180,6 @@
                     "usePadding": false
                 },
                 {
-                    "colorizeIcons": false,
-                    "hideMode": "hidden",
-                    "id": "ActiveWindow",
-                    "maxWidth": 145,
-                    "scrollingMode": "hover",
-                    "showIcon": true,
-                    "showText": false,
-                    "textColor": "none",
-                    "useFixedWidth": false
-                },
-                {
-                    "compactMode": false,
-                    "hideMode": "hidden",
-                    "hideWhenIdle": false,
-                    "id": "MediaMini",
-                    "maxWidth": 145,
-                    "panelShowAlbumArt": true,
-                    "scrollingMode": "hover",
-                    "showAlbumArt": true,
-                    "showArtistFirst": true,
-                    "showProgressRing": true,
-                    "showVisualizer": false,
-                    "textColor": "none",
-                    "useFixedWidth": false,
-                    "visualizerType": "linear"
-                },
-                {
                     "defaultSettings": {
                         "boldText": true,
                         "checkCmd": "(checkupdates; paru -Qua) 2>/dev/null",
@@ -227,10 +200,34 @@
                     "id": "plugin:arch-updater"
                 },
                 {
-                    "id": "plugin:mimeapp-gui"
+                    "colorizeIcons": false,
+                    "hideMode": "hidden",
+                    "id": "ActiveWindow",
+                    "maxWidth": 10000,
+                    "scrollingMode": "hover",
+                    "showIcon": true,
+                    "showText": true,
+                    "textColor": "none",
+                    "useFixedWidth": false
                 }
             ],
             "right": [
+                {
+                    "compactMode": false,
+                    "hideMode": "hidden",
+                    "hideWhenIdle": false,
+                    "id": "MediaMini",
+                    "maxWidth": 100000,
+                    "panelShowAlbumArt": true,
+                    "scrollingMode": "hover",
+                    "showAlbumArt": true,
+                    "showArtistFirst": true,
+                    "showProgressRing": true,
+                    "showVisualizer": true,
+                    "textColor": "none",
+                    "useFixedWidth": false,
+                    "visualizerType": "linear"
+                },
                 {
                     "blacklist": [
                     ],
@@ -268,11 +265,6 @@
                         "terminalCommand": "kitty"
                     },
                     "id": "plugin:usb-drive-manager"
-                },
-                {
-                    "defaultSettings": {
-                    },
-                    "id": "plugin:mirror-mirror"
                 },
                 {
                     "hideWhenZero": false,
