@@ -5,6 +5,7 @@ return {
 		messages = { enabled = false }, -- we use Snacks
 		popupmenu = { enabled = true },
 		lsp = {
+			progress = { enabled = false }, -- Use fidget
 			signature = { enabled = false }, -- we use lsp-signature.nvim
 		},
 	},
