@@ -152,13 +152,17 @@ return {
 			"prettierd", -- JavaScript & TypeScript Formatter
 			"prettier", -- JavaScript & TypeScript Formatter
 			"clang-format", -- Install for Java and Other C like Lang
+			"java-debug-adapter",
+			"java-test",
 		})
 
 		require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
 		for name, server in pairs(servers) do
-			vim.lsp.config(name, server)
-			vim.lsp.enable(name)
+			if name ~= "jdtls" then
+				vim.lsp.config(name, server)
+				vim.lsp.enable(name)
+			end
 		end
 
 		-- local original_capabilities = vim.lsp.protocol.make_client_capabilities()

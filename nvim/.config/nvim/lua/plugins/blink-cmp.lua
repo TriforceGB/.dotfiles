@@ -40,12 +40,20 @@ return {
 
 		-- (Default) Only show the documentation popup when manually triggered
 		completion = {
-			documentation = { auto_show = false },
+			documentation = {
+				auto_show = false,
+				window = { border = "single" },
+			},
 			trigger = {
 				-- show_in_snippet = false,
 			},
 			list = {
 				selection = { preselect = true, auto_insert = false },
+			},
+			menu = { border = "single" },
+			signature = {
+				enable = true,
+				window = { border = "single" },
 			},
 		},
 
