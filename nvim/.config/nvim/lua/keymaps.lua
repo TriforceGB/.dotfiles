@@ -62,3 +62,9 @@ vim.keymap.set("n", "<leader>d?", function()
 	local widgets = require("dap.ui.widgets")
 	widgets.centered_float(widgets.scopes)
 end)
+
+-- PlatformIO
+vim.keymap.set("n", "<leader>au", "<cmd>PIO upload<cr>")
+vim.keymap.set("n", "<leader>ac", "<cmd>PIO check<cr>")
+vim.keymap.set("n", "<leader>ar", "<cmd>PIO run<cr>")
+vim.keymap.set("n", "<leader>am", "<cmd>PIO monitor<cr>")

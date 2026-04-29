@@ -51,10 +51,10 @@ return {
 				selection = { preselect = true, auto_insert = false },
 			},
 			menu = { border = "single" },
-			signature = {
-				enable = true,
-				window = { border = "single" },
-			},
+		},
+		signature = {
+			enabled = true,
+			window = { border = "single" },
 		},
 
 		-- Default list of enabled providers defined so that you can extend it

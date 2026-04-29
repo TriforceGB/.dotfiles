@@ -84,7 +84,6 @@ return {
 		-- Enable the following language servers
 		---@type table<string, vim.lsp.Config>
 		local servers = {
-			-- clangd = {},
 			-- gopls = {},
 			-- pyright = {},
 			-- rust_analyzer = {},
@@ -103,6 +102,11 @@ return {
 
 			-- Python LSP
 			basedpyright = {},
+
+			-- Arduino LSP
+			-- arduino_language_server = {},
+
+			-- clangd = {},
 
 			-- Special Lua Config, as recommended by neovim help docs
 			lua_ls = {
