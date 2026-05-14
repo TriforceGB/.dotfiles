@@ -1,7 +1,5 @@
 {
-  "colorHistory": [
-    "#1D1012"
-  ],
+  "colorHistory": [],
   "paletteColors": [],
   "installedLangs": [
     "eng"
@@ -10,14 +8,5 @@
   "selectedOcrLang": "eng",
   "detectedRecorder": "",
   "stateIsRunning": false,
-  "stateActiveTool": "",
-  "stateMirrorVisible": false,
-  "ocrResult": "Mod+Shift+Slash",
-  "ocrCapturePath": "/tmp/screen-toolkit-ocr.png",
-  "translateResult": "",
-  "resultHex": "#1D1012",
-  "resultRgb": "rgb(29, 16, 18)",
-  "resultHsv": "hsv(351, 45%, 11%)",
-  "resultHsl": "hsl(351, 29%, 9%)",
-  "colorCapturePath": "/tmp/screen-toolkit-colorpicker.png"
+  "stateActiveTool": ""
 }

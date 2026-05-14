@@ -10,8 +10,6 @@ fi
 
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
-# Source Colors from Dots
-source ~/.config/zshrc.d/dots-hyprland.zsh
 # Adding Starship
 zinit ice as"command" from"gh-r" \
           atclone"./starship init zsh > init.zsh; ./starship completions zsh > _starship" \
@@ -75,7 +73,6 @@ export EDITOR=nvim
 #Aliases
 alias ls='eza --color --icons -F'
 alias ip='ip -color=auto'
-alias setup='bash -c "$(curl -fsSL https://raw.githubusercontent.com/TriforceGB/Anisble_Setup/main/Scripts/Pre-Ansible.sh)"'
 alias neofetch=fastfetch
 alias fetch=fastfetch
 alias vim=nvim

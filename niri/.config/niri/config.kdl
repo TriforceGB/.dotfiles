@@ -117,6 +117,12 @@ output "eDP-1" {
     // automatically.
     position x=0 y=0
 }
+output "HDMI-A-1" {
+	mode "4096x2160@60"
+	scale 1.0
+	position x=1920 y=0
+
+}
 
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
@@ -374,6 +380,7 @@ layer-rule {
 window-rule {
     match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
     default-floating-position x=10 y=10 relative-to="bottom-right"
+    open-focused false
 }
 
 // Set the regular wallpaper on the backdrop.
@@ -418,7 +425,7 @@ binds {
     Mod+V hotkey-overlay-title="Open Clipboard Histoy" { spawn-sh "qs -c noctalia-shell ipc call launcher clipboard"; }
     // Mod+g hotkey-overlay-title="Open Window Picker" { spawn-sh "qs -c noctalia-shell ipc call launcher windows"; }
 	Ctrl+Alt+Delete hotkey-overlay-title="Session Manager" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
-    Ctrl+Shift+L hotkey-overlay-title="Lock Screen" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
+    Ctrl+Shift+Alt+L hotkey-overlay-title="Lock Screen" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
     Mod+Shift+P hotkey-overlay-title="Toggle Power Profile" { spawn-sh "qs -c noctalia-shell ipc call powerProfile cycle"; }
     Mod+Ctrl+T hotkey-overlay-title="Wallpaper Picker" { spawn-sh "qs -c noctalia-shell ipc call wallpaper toggle"; }
     Print { screenshot; }

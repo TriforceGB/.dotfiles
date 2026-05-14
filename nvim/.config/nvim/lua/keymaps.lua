@@ -64,7 +64,7 @@ vim.keymap.set("n", "<leader>d?", function()
 end)
 
 -- PlatformIO
-vim.keymap.set("n", "<leader>au", "<cmd>PIO upload<cr>")
-vim.keymap.set("n", "<leader>ac", "<cmd>PIO check<cr>")
-vim.keymap.set("n", "<leader>ar", "<cmd>PIO run<cr>")
-vim.keymap.set("n", "<leader>am", "<cmd>PIO monitor<cr>")
+-- vim.keymap.set("n", "<leader>au", "<cmd>PIO upload<cr>")
+-- vim.keymap.set("n", "<leader>ac", "<cmd>PIO check<cr>")
+-- vim.keymap.set("n", "<leader>ar", "<cmd>PIO run<cr>")
+-- vim.keymap.set("n", "<leader>am", "<cmd>PIO monitor<cr>")

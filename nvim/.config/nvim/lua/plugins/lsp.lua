@@ -104,9 +104,21 @@ return {
 			basedpyright = {},
 
 			-- Arduino LSP
-			-- arduino_language_server = {},
+			arduino_language_server = {
+				-- cmd = {
+				-- 	"arduino_language_server",
+				-- 	"-cli-config",
+				-- 	vim.fn.expand("~/.arduino15/arduino-cli.yaml"),
+				-- 	"-fqbn",
+				-- 	"HoodLoader2:avr:HoodLoader2atmega16u2",
+				-- 	"-cli",
+				-- 	"arduino-cli",
+				-- 	"-clangd",
+				-- 	"clangd",
+				-- },
+			},
 
-			-- clangd = {},
+			clangd = {},
 
 			-- Special Lua Config, as recommended by neovim help docs
 			lua_ls = {
