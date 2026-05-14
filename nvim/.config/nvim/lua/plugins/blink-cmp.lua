@@ -66,6 +66,13 @@ return {
 				"path",
 				"buffer",
 			},
+			per_filetype = {
+				sql = { "snippets", "dadbod", "buffer" },
+			},
+			-- add vim-dadbod-completion to your completion providers
+			providers = {
+				dadbod = { name = "Dadbod", module = "vim_dadbod_completion.blink" },
+			},
 		},
 
 		-- (Default) Rust fuzzy matcher for typo resistance and significantly better performance

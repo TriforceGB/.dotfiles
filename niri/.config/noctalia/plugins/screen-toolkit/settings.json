@@ -8,5 +8,6 @@
   "selectedOcrLang": "eng",
   "detectedRecorder": "",
   "stateIsRunning": false,
-  "stateActiveTool": ""
+  "stateActiveTool": "",
+  "stateMirrorVisible": false
 }
