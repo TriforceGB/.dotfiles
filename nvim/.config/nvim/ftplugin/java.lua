@@ -57,7 +57,10 @@ local config = {
 
 	-- This is the default if not provided, you can remove it. Or adjust as needed.
 	-- One dedicated LSP server & client will be started per unique root_dir
-	root_dir = require("jdtls.setup").find_root({ ".git", "mvnw", "pom.xml", "build.gradle" }),
+	-- This Finds the Root of The Repo
+	-- root_dir = require("jdtls.setup").find_root({ ".git", "mvnw", "pom.xml", "build.gradle" }),
+	-- This Find the Root Based on the src folder (better for Mult Project in 1 Repo)
+	root_dir = require("jdtls.setup").find_root({ "src", "*.java" }),
 
 	-- Here you can configure eclipse.jdt.ls specific settings
 	-- See https://github.com/eclipse/eclipse.jdt.ls/wiki/Running-the-JAVA-LS-server-from-the-command-line#initialize-request
@@ -148,6 +151,11 @@ local config = {
 					template = "${object.className}{${member.name()}=${member.value}, ${otherMembers}}",
 				},
 				useBlocks = true,
+			},
+			project = {
+				sourcePaths = "src",
+				outputPath = "bin",
+				referencedLibraries = "lib/*.jar",
 			},
 		},
 	},

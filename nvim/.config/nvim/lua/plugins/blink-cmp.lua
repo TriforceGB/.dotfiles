@@ -53,7 +53,7 @@ return {
 			menu = { border = "single" },
 		},
 		signature = {
-			enabled = true,
+			enabled = false,
 			window = { border = "single" },
 		},
 
