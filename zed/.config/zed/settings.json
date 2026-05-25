@@ -1,13 +1,450 @@
+// settings.json, generated at Wed May 06 2026 07:46:59 GMT+0800 (Singapore Standard Time)
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
 {
-  "relative_line_numbers": true,
-  "icon_theme": "Catppuccin Mocha",
-  "session": {
-    "trust_all_worktrees": true,
-  },
-  "vim_mode": true,
-  "theme": {
-    "mode": "system",
-    "light": "Ayu Light",
-    "dark": "Catppuccin Mocha",
-  },
+	"disable_ai": true,
+	"preview_tabs": {
+		"enable_preview_from_file_finder": false,
+	},
+	"title_bar": {
+		"show_branch_status_icon": true,
+	},
+	"colorize_brackets": true,
+	"code_lens": "on",
+	"toolbar": {
+		"code_actions": true,
+	},
+	"show_signature_help_after_edits": true,
+	"auto_signature_help": true,
+	"redact_private_values": true,
+	"cli_default_open_behavior": "existing_window",
+	"session": {
+		"trust_all_worktrees": true,
+	},
+	"git": {
+		"inline_blame": {
+			"enabled": true,
+		},
+	},
+	"status_bar": {
+		"experimental.show": true,
+	},
+	"gutter": {
+		"line_numbers": true,
+	},
+	"cursor_shape": "bar",
+	"cursor_blink": true,
+	"use_system_window_tabs": true,
+	"show_whitespaces": "all",
+	"show_edit_predictions": true,
+	"hard_tabs": true,
+	"git_panel": {
+		"tree_view": true,
+		"dock": "right",
+	},
+	"icon_theme": {
+		"mode": "dark",
+		"light": "Catppuccin Mocha",
+		"dark": "Catppuccin Mocha",
+	},
+	"base_keymap": "VSCode",
+	"theme": {
+		"mode": "dark",
+		"light": "Catppuccin Frappé",
+		"dark": "Catppuccin Mocha",
+	},
+	"ui_font_size": 17,
+	"buffer_font_size": 18.5,
+	// Finder model width
+	"file_finder": {
+		"modal_max_width": "small",
+	},
+
+	// Fonts
+	"buffer_font_family": "JetBrainsMono Nerd Font",
+	"buffer_font_fallbacks": [
+		"Maple Mono NF",
+		"JetBrainsMono Nerd Font Mono",
+		"Courier New",
+	],
+
+	// Vim mode settings
+	"vim_mode": true,
+	"vim": {},
+	"which_key": {
+		"delay_ms": 500,
+		"enabled": true,
+	},
+	// use relative line numbers
+	"relative_line_numbers": "enabled",
+	"tab_bar": {
+		"show": true,
+	},
+	"scrollbar": {
+		"show": "never",
+	},
+	// Only show error on tab
+	"tabs": {
+		"show_diagnostics": "errors",
+	},
+	// Indentation, rainbow indentation
+	"indent_guides": {
+		"enabled": true,
+		"coloring": "indent_aware",
+	},
+	// NOTE: Zen mode, refer https://github.com/zed-industries/zed/issues/4382 when it's resolved
+	"centered_layout": {
+		"left_padding": 0.15,
+		"right_padding": 0.15,
+	},
+	"edit_predictions": {
+		"provider": "zed",
+	},
+	"agent_servers": {
+		"pi-acp": {
+			"type": "registry",
+		},
+		"kilo": {
+			"type": "registry",
+		},
+		"github-copilot-cli": {
+			"type": "registry",
+		},
+		"gemini": {
+			"type": "registry",
+		},
+		"cursor": {
+			"type": "registry",
+		},
+		"codex-acp": {
+			"type": "registry",
+		},
+		"claude-acp": {
+			"type": "registry",
+		},
+		"amp-acp": {
+			"type": "registry",
+		},
+		"factory-droid": {
+			"type": "registry",
+		},
+		"github-copilot": {
+			"type": "registry",
+		},
+		"opencode": {
+			"favorite_config_option_values": {
+				"model": ["opencode-go/glm-5.1"],
+			},
+			"type": "registry",
+		},
+	},
+	// Use Copilot Chat AI as default
+	"agent": {
+		"default_profile": "write",
+		"favorite_models": [
+			{
+				"provider": "opencode",
+				"model": "go/minimax-m2.7",
+				"enable_thinking": false,
+			},
+			{
+				"provider": "opencode",
+				"model": "go/glm-5.1",
+				"enable_thinking": false,
+			},
+			{
+				"provider": "CrofAI",
+				"model": "kimi-k2.6",
+				"enable_thinking": false,
+			},
+			{
+				"provider": "CrofAI",
+				"model": "glm-5.1",
+				"enable_thinking": false,
+			},
+			{
+				"provider": "CrofAI",
+				"model": "deepseek-v4-pro",
+				"enable_thinking": false,
+			},
+			{
+				"provider": "opencode",
+				"model": "go/kimi-k2.6",
+				"enable_thinking": false,
+			},
+		],
+		"dock": "left",
+		"inline_assistant_model": {
+			"provider": "ollama",
+			"model": "gpt-oss:120b-cloud",
+		},
+		"default_model": {
+			"provider": "opencode",
+			"model": "free/minimax-m2.5-free",
+		},
+	},
+	// Uncomment below to use local AI with Ollama, refer https://zed.dev/docs/language-model-integration?highlight=ollama#using-ollama-on-macos
+	// "assistant": {
+	//   "default_model": {
+	//     "provider": "ollama",
+	//     "model": "llama3.1:latest"
+	//   },
+	//   "version": "2",
+	//   "provider": null
+	// },
+	"language_models": {
+		"opencode": {
+			"show_zen_models": false,
+		},
+		"ollama": {
+			"api_url": "http://localhost:11434",
+		},
+		"openai_compatible": {
+			"CrofAI": {
+				"api_url": "https://crof.ai/v1",
+				"available_models": [
+					{
+						"name": "kimi-k2.6",
+						"display_name": "Kimi K2.6",
+						"max_tokens": 262144,
+						"capabilities": {
+							"tools": true,
+							"images": true,
+							"parallel_tool_calls": true,
+							"prompt_cache_key": true,
+						},
+					},
+					{
+						"name": "kimi-k2.6-precision",
+						"display_name": "Kimi K2.6 Precision",
+						"max_tokens": 262144,
+						"capabilities": {
+							"tools": true,
+							"images": true,
+							"parallel_tool_calls": true,
+							"prompt_cache_key": true,
+						},
+					},
+					{
+						"name": "qwen3.5-397b-a17b",
+						"display_name": "Qwen 3.5",
+						"max_tokens": 262144,
+						"capabilities": {
+							"tools": true,
+							"images": true,
+							"parallel_tool_calls": true,
+							"prompt_cache_key": true,
+						},
+					},
+					{
+						"name": "deepseek-v4-pro",
+						"display_name": "Deepseek V4 Pro",
+						"max_tokens": 10000000,
+					},
+					{
+						"name": "deepseek-v4-pro-precision",
+						"display_name": "Deepseek V4 Pro Precision",
+						"max_tokens": 10000000,
+					},
+					{
+						"name": "glm-5.1-precision",
+						"display_name": "GLM 5.1 Precision",
+						"max_tokens": 202752,
+					},
+					{
+						"name": "glm-5.1",
+						"display_name": "GLM 5.1",
+						"max_tokens": 202752,
+					},
+					{
+						"name": "qwen3.6-27b",
+						"display_name": "Qwen 3.6",
+						"max_tokens": 262144,
+						"capabilities": {
+							"tools": true,
+							"images": true,
+							"parallel_tool_calls": true,
+							"prompt_cache_key": true,
+						},
+					},
+				],
+			},
+		},
+	},
+	// Inlay hints preconfigured by Zed: Go, Rust, Typescript and Svelte
+	"inlay_hints": {
+		"enabled": true,
+	},
+	// LSP
+	"lsp": {
+		"tailwindcss-language-server": {
+			"settings": {
+				"classAttributes": ["class", "className", "ngClass", "styles"],
+			},
+		},
+		"jdtls": {
+			"settings": {
+				// Path to a JDK 21+ used to run JDTLS.
+				// Also accepts the legacy key "java.home".
+				"java_home": "/usr/lib/jvm/default",
+				"lombok_support": false,
+				"jdk_auto_download": false,
+
+				// JVM heap size for JDTLS (maps to -Xms and -Xmx)
+				// Accepts values like "512m", "1G", "4096m", etc.
+				"min_memory": "1G", // default: "1G"
+				"max_memory": "2G", // default: unset (no -Xmx limit)
+
+				// Controls when to check for updates for JDTLS, Lombok, and Debugger
+				// - "always" (default): Always check for and download the latest version
+				// - "once": Check for updates only if no local installation exists
+				// - "never": Never check for updates, only use existing local installations (errors if missing)
+				//
+				// Note: Invalid values will default to "always"
+				// If custom paths (below) are provided, check_updates is IGNORED for that component
+				"check_updates": "always",
+
+				// Use custom installations instead of managed downloads
+				// When these are set, the extension will not download or manage these components
+				// "jdtls_launcher": "/path/to/your/jdt-language-server/bin/jdtls",
+				// "lombok_jar": "/path/to/your/lombok.jar",
+				// "java_debug_jar": "/path/to/your/com.microsoft.java.debug.plugin.jar",
+				"java": {
+					"project": {
+						"referencedLibraries": ["lib/**/*.jar"],
+						"sourcePaths": ["src"],
+					},
+				},
+			},
+		},
+		"discord_presence": {
+			"initialization_options": {
+				"state": "Working on {filename}",
+				"details": "In {workspace}",
+
+				// Idle settings - when you're inactive
+				"idle": {
+					"timeout": 300, // Idle timeout in seconds (300 seconds = 5 minutes)
+
+					// Action to take when idle
+					// `change_activity` - changes the activity to idle with the following details
+					// `clear_activity` - clears the activity (hides it)
+					"action": "change_activity",
+
+					"state": "Idling",
+					"details": "In Zed",
+				},
+
+				// Rules to disable presence in specific workspaces
+				"rules": {
+					"mode": "blacklist", // Can also be "whitelist"
+					"paths": ["absolute path"],
+				},
+
+				"git_integration": true,
+
+				// Per-language overrides
+				"languages": {},
+			},
+		},
+	},
+
+	"languages": {
+		// Refer https://zed.dev/docs/languages/javascript and https://zed.dev/docs/languages/typescript for more info
+		"TypeScript": {
+			// Refer https://github.com/jellydn/ts-inlay-hints for how to setup for Neovim and VSCode
+			"show_whitespaces": "all",
+			"show_edit_predictions": true,
+			"hard_tabs": true,
+			"inlay_hints": {
+				"enabled": true,
+				"show_parameter_hints": false,
+				"show_other_hints": true,
+				"show_type_hints": true,
+			},
+		},
+		"Python": {
+			"show_whitespaces": "all",
+			"show_edit_predictions": true,
+			"hard_tabs": true,
+			"format_on_save": "on",
+			"formatter": {
+				"language_server": {
+					"name": "ruff",
+				},
+			},
+			"language_servers": [
+				"ty",
+				"ruff",
+				"!basedpyright",
+				"!pyrefly",
+				"!pyright",
+				"!pylsp",
+			],
+		},
+		"Java": { "formatter": "language_server" },
+	},
+	// Use zed commit editor
+	"terminal": {
+		"shell": {
+			"program": "/usr/bin/zsh",
+		},
+		"show_count_badge": true,
+		"font_size": 17.0,
+		"font_family": "Maple Mono NF",
+		"env": {
+			"EDITOR": "zed --wait",
+		},
+		"working_directory": "current_project_directory",
+	},
+	// File syntax highlighting
+	"file_types": {
+		"Dockerfile": ["Dockerfile", "Dockerfile.*"],
+		"JSON": ["json", "jsonc", "*.code-snippets"],
+	},
+	// File scan exclusions, hide on the file explorer and search
+	"file_scan_exclusions": [
+		"**/.git",
+		"**/.svn",
+		"**/.hg",
+		"**/CVS",
+		"**/.DS_Store",
+		"**/Thumbs.db",
+		"**/.classpath",
+		"**/.settings",
+		// above is default from Zed
+		"**/out",
+		"**/dist",
+		"**/.husky",
+		"**/.turbo",
+		"**/.vscode-test",
+		"**/.vscode",
+		"**/.next",
+		"**/.storybook",
+		"**/.tap",
+		"**/.nyc_output",
+		"**/report",
+		"**/node_modules",
+	],
+	// Turn off telemetry
+	"telemetry": {
+		"diagnostics": true,
+		"metrics": false,
+	},
+	// Move all panel to the right
+	"project_panel": {
+		"auto_fold_dirs": false,
+		"button": true,
+		"dock": "right",
+		"git_status": true,
+	},
+	"collaboration_panel": {
+		"dock": "right",
+	},
 }
