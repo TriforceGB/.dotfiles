@@ -49,7 +49,7 @@
 		"dock": "right",
 	},
 	"icon_theme": {
-		"mode": "dark",
+		"mode": "light",
 		"light": "Catppuccin Mocha",
 		"dark": "Catppuccin Mocha",
 	},
@@ -321,6 +321,11 @@
 						"sourcePaths": ["src"],
 					},
 				},
+			},
+		},
+		"arduino-language-server": {
+			"binary": {
+				"-cli-config": true,
 			},
 		},
 		"discord_presence": {
